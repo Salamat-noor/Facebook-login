@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY FIRST FullStack App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container container-in-update">
+        <h3>Update Operation</h3>
+        <form action="http://localhost:3000/final-update" method="post">
+            <fieldset>
+                <legend>Addmission Form</legend>
+                <input type="hidden" name="hidden_id" value="<%=results.id%>">
+
+                <div class="form-lables">
+                    <label for="name">Full Name :</label>
+                    <input type="text" name="name" id="uname" value="<%=results.name%>">
+                </div>
+                <div class="form-lables">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="uemail" value="<%=results.email%>">
+                </div>
+                <div class="submit_area">
+                    <button type="submit" class="submit_btn">Update</button>
+                    <button type="submit" class="submit_btn"><a href="/data" class="back-btn"> Back </a></button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
